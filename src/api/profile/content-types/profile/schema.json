@@ -16,16 +16,15 @@
       "type": "string",
       "required": true
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "profile"
-    },
     "locations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::location.location"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
