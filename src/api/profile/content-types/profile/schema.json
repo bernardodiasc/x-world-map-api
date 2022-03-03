@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -21,10 +21,10 @@
       "relation": "oneToMany",
       "target": "api::location.location"
     },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
+    "email": {
+      "type": "email",
+      "unique": true,
+      "required": true
     }
   }
 }
