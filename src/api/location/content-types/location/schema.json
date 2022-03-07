@@ -32,11 +32,17 @@
     },
     "latitude": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "longitude": {
       "type": "string",
-      "required": true
+      "required": false
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "locations"
     }
   }
 }

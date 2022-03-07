@@ -16,15 +16,16 @@
       "type": "string",
       "required": true
     },
-    "locations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::location.location"
-    },
     "email": {
       "type": "email",
       "unique": true,
       "required": true
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location",
+      "mappedBy": "profile"
     }
   }
 }
