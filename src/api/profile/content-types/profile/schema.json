@@ -26,6 +26,24 @@
       "relation": "oneToMany",
       "target": "api::location.location",
       "mappedBy": "profile"
+    },
+    "github": {
+      "type": "string"
+    },
+    "stackoverflow": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "about": {
+      "type": "string"
     }
   }
 }
