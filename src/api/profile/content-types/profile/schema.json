@@ -44,6 +44,12 @@
     },
     "about": {
       "type": "string"
+    },
+    "attendees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attendee.attendee",
+      "mappedBy": "profile"
     }
   }
 }

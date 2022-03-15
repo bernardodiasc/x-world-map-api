@@ -43,6 +43,18 @@
       "relation": "manyToOne",
       "target": "api::profile.profile",
       "inversedBy": "locations"
+    },
+    "event": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "locations"
+    },
+    "attendees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::attendee.attendee",
+      "mappedBy": "location"
     }
   }
 }
