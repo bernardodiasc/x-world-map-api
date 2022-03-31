@@ -24,10 +24,10 @@
       "type": "string",
       "required": false
     },
-    "since": {
+    "start": {
       "type": "date"
     },
-    "until": {
+    "end": {
       "type": "date"
     },
     "latitude": {
@@ -44,7 +44,7 @@
       "target": "api::profile.profile",
       "inversedBy": "locations"
     },
-    "event": {
+    "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::event.event",
@@ -55,6 +55,16 @@
       "relation": "oneToMany",
       "target": "api::attendee.attendee",
       "mappedBy": "location"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "event": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -16,14 +16,11 @@
       "type": "string",
       "required": true
     },
-    "info": {
-      "type": "richtext"
-    },
     "locations": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::location.location",
-      "mappedBy": "event"
+      "mappedBy": "category"
     }
   }
 }
