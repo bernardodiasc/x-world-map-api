@@ -2,7 +2,15 @@
   "name": "x-world-map-api",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "A World Map visualization of remote workers, events and more...",
+  "author": {
+    "name": "Bernardo Dias",
+    "email" : "bernardodiasdacruz@gmail.com",
+    "url" : "http://bernardodiasdacruz.com/"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/bernardodiasc/x-world-map-api#readme",
+  "repository": "github:bernardodiasc/x-world-map-api",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -19,15 +27,11 @@
     "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.2"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
   "strapi": {
     "uuid": "b5ebe31b-f806-4cc6-be2e-495fc612c0d6"
   },
   "engines": {
     "node": ">=12.x.x <=14.x.x",
     "npm": "6.x.x"
-  },
-  "license": "MIT"
+  }
 }
