@@ -62,10 +62,6 @@
     "description": {
       "type": "richtext"
     },
-    "event": {
-      "type": "boolean",
-      "default": false
-    },
     "timezone": {
       "type": "string"
     }
