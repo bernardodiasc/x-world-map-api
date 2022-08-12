@@ -31,7 +31,7 @@ yarn develop
 
 Maybe you need to put some settings on your local Strapi. If you need, follow those steps:
 
-### Set some feature flags
+### Set some settings
 
 -> Settings > users & permissions plugin > roles:
 
