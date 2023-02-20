@@ -61,6 +61,12 @@
     },
     "website": {
       "type": "string"
+    },
+    "bounties": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bounty.bounty",
+      "mappedBy": "profile"
     }
   }
 }

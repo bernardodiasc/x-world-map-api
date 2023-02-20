@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bounties",
+  "info": {
+    "singularName": "bounty",
+    "pluralName": "bounties",
+    "displayName": "Bounty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "pictures": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "bounties"
+    }
+  }
+}
