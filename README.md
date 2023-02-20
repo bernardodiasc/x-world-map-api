@@ -23,6 +23,22 @@ yarn install
 
 Make copy of `.env.example` in the root of this project and use the name `.env.local`.
 
+Use a hash value for these keys:
+
+```
+APP_KEYS=
+JWT_SECRET=
+API_TOKEN_SALT=
+```
+
+To enable file upload create an account at https://cloudinary.com/ and fill the credentials:
+
+```
+CLOUDINARY_NAME=
+CLOUDINARY_KEY=
+CLOUDINARY_SECRET=
+```
+
 Then run the app:
 
 ```bash
